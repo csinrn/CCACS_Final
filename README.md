@@ -12,4 +12,4 @@ npm start
 ```
 
 ## Result
-![image](readmeImages/node.png=300x200) ![image](readmeImages/html.png=300x200) 
+![image](readmeImages/node.png =300x200) ![image](readmeImages/html.png =300x200) 
