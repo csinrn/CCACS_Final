@@ -14,12 +14,15 @@ THI = null
 
 node = 'node_01'
 
+app.use('/public', express.static('public'));
+
 app.get('/',  async (req, res, next) => {
     var webhookURL = "https://9y8wy7m8tc.execute-api.us-east-2.amazonaws.com/webhook";
     var date = new Date().toDateString();
     console.log(date)
     records = await getRecords()
-    res.send(records)
+    
+    res.sendFile( __dirname + "/public/" + "index.html" );
 });
 
 app.get('/reg_thi_bug',  async (req, res, next) => {
@@ -74,7 +77,7 @@ app.get('/thi',  async (req, res, next) => {
 
 async function getRecords(){
     // <-- web version -->
-    /* var webhookURL = "https://5jstdu4jn7.execute-api.us-east-1.amazonaws.com/prod";
+    var webhookURL = "https://5jstdu4jn7.execute-api.us-east-1.amazonaws.com/prod";
     res= await axios.get(
         webhookURL
     ).then(async (response)=>{    
@@ -85,12 +88,14 @@ async function getRecords(){
         // console.log(records)
         return records
     }).catch((error) => { console.error(error) }); 
-    return res */
+    return res
 
+    /*
     // <-- local version -->
-    csvstring = fs.readFileSync('data.csv', 'utf8');
+   csvstring = fs.readFileSync('data.csv', 'utf8');
     recs = parse(csvstring, {columns: true});
     return recs
+    */
 }
 
 http.createServer(app).listen(port, function(){
