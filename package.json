@@ -1,0 +1,21 @@
+{
+  "name": "finalproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "csv-parse": "^4.14.2",
+    "fs": "0.0.1-security",
+    "http": "0.0.1-security",
+    "node-uuid": "*",
+    "regression": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node app.js",
+    "start": "node app"
+  },
+  "author": "csinrn",
+  "license": "MIT"
+}

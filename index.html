@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DEMO</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css">
+    <script src="https://unpkg.com/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="/assets/vendor/chart.js/dist/Chart.min.js"></script>
+    <script src="/assets/vendor/chart.js/dist/Chart.extension.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+//======================================================================================================
+
+     google.charts.load("current", {packages:["corechart"]});
+     google.charts.setOnLoadCallback(drawChart);
+     function drawChart() {
+       var data = google.visualization.arrayToDataTable([
+         ['THI', 'Bugs Number'],
+[10.77,0],[15.38,0],[25.43,1],[15,0],[20.59,0],[36.24,1],[11.55,0],[10.77,0],[30.86,3],[23.28,1],[12.12,0],[27.35,0],[24.75,0],[20.49,0],[10.1,0],[18.7,0],[16.32,0],[30.29,7],[20.23,12],[23.52,1],[10.77,0],[16.43,0],[23.36,0],[31.36,0],[22.34,0],[26.21,0],[29.55,2],[24.33,1],[11.14,0],[29.18,0],[18.37,0],[14.57,1],[18.03,0],[29.42,0],[30.89,2],[10.37,0],[17.34,1],[9.46,0],[18.29,0],[16.78,1],[29.5,1],[29.81,0],[12.39,0],[9.29,0],[11.04,0],[5.55,0],[35.09,0],[26.32,0],[23.11,1],[8.79,0],[22.25,0],[22.88,0],[30.57,4],[36.69,7],[11.39,0],[10.88,0],[13.7,1],[27.78,0],[14.13,0],[27.6,7],[25.72,0],[28.48,0],[26.29,0],[27.49,1],[10.26,0],[8.54,9],[30.88,7],[25.16,8],[30.91,1],[29.47,0],[18.23,0],[10.14,0],[18.81,0],[27.28,57],[21.89,0],[21.33,0],[19.26,0],[31.47,0],[13.61,0],[11.4,0],[13.44,0],[21,0],[12.4,0],[16.22,0],[10.02,0],[14.64,0],[22.18,0],[23.44,0],[12.86,0],[12.21,0],[14.21,0],[26.97,0],[14.86,3],[26.15,16],[17.28,1],[7.85,0]       
+
+	]);
+
+    var options = {
+      title: 'Linear Regression THI_BugsNum',
+      hAxis: {title: 'THI Value'},
+      vAxis: {title: 'Bugs Number'},
+      legend: 'none',
+      trendlines: { 0: {} }    // Draw a trendline for data series 0.
+    };
+    var chart = new google.visualization.ScatterChart(document.getElementById('polynomial2_div'));
+    chart.draw(data, options);
+   }
+//======================================================================================================
+      google.charts.setOnLoadCallback(drawChart1);
+      function drawChart1() {
+
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Cranefly', 27],
+          ['Fly', 13],
+          ['Gnat', 6],
+          ['Midge', 7],
+          ['Mosquto', 21],
+	  ['Mothfly', 43],
+	  ['Thrips', 19],
+	  ['Whitefly', 22],
+        ]);
+
+        var piechart_options = {title:'Pie Chart: How Much Bugs are Detected',
+			width:480,
+			height:500};
+        var piechart = new google.visualization.PieChart(document.getElementById('piechart_div'));
+        piechart.draw(data, piechart_options);
+
+        var barchart_options = {title:'Barchart: How Much Bugs are Detected',
+                       width:480,
+                       height:500,
+                       legend: 'none'};
+        var barchart = new google.visualization.BarChart(document.getElementById('barchart_div'));
+        barchart.draw(data, barchart_options);
+      } 
+    </script>
+  </head>
+  <body>
+   <div style="text-align:center;"><h1>Linear Regression THI_BugsNum</h1></div>
+   <div id='polynomial2_div' style='width: 900px; height: 500px;'></div>   
+    <div style="text-align:center;"><h1>Table using Bootstrap</h1></div>
+    <div class="container">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Student ID</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="danger">
+            <td>玟銨</td>
+     	    <td>陳</td>
+      	    <td>r09631011</td>
+          </tr>
+          <tr class="success">
+      	    <td>乙澤</td>
+            <td>吳</td>
+     	    <td>r09631007</td>
+          </tr>
+          <tr class="info">
+      	    <td>宜臻</td>
+            <td>何</td>
+            <td>r09631020</td> 
+          </tr>
+        </tbody>
+      </table>
+    </div>
+        <table class="columns">
+          <tr>
+            <td><div id="piechart_div" style="width: 50%; height: 60%;"></div></td>
+            <td><div id="barchart_div" style="width: 50%; height: 60%;"></div></td>
+          </tr>
+        </table>
+    <div style="text-align:center;"><h1>Image of Sticky Paper</h1></div>
+	<img src="https://pestnodeimgdata.s3.amazonaws.com/Lab405Rpi/10-13/6.png" width="900" height="550">
+  </body>
+</html>
