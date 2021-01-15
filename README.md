@@ -4,7 +4,7 @@ Final Project for 2020 CCACS
 Using Raspberry Pi, AWS, Node.js and HTML. This repository stores the front and backend code. 
 
 ## Run the code
-Clone the repository, install npm and node, run the following command to execute the code
+Clone the repository, install npm and node, run the following commands to execute the code
 
 ```
 npm install
