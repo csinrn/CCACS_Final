@@ -1,6 +1,6 @@
 # CCACS_Final
 
-Final Project for 2020CCACS
+Final Project for 2020CCACS  
 Using Raspberry Pi, AWS, Node.js and HTML. This repository store the code for front and backend. 
 
 ## Run the code
@@ -12,4 +12,4 @@ npm start
 ```
 
 ## Result
-![image]() ![image]()
+![image](https://github.com/csinrn/CCACS_Final/blob/master/readmeImages/node.png =300x200) ![image](https://github.com/csinrn/CCACS_Final/blob/master/readmeImages/html.png =300x200) 
