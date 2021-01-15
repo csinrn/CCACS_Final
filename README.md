@@ -12,4 +12,4 @@ npm start
 ```
 
 ## Result
-<img src="https://github.com/csinrn/CCACS_Final/blob/master/readmeImages/node.png" alt="Node"  width="260" height="200"> <img src="https://github.com/csinrn/CCACS_Final/blob/master/readmeImages/html.png" alt="Html Result"  width="290" height="200">
+<img src="https://github.com/csinrn/CCACS_Final/blob/master/readmeImages/node.png" alt="Node"  width="250" height="200"> <img src="https://github.com/csinrn/CCACS_Final/blob/master/readmeImages/html.png" alt="Html Result"  width="350" height="200">
