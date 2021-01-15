@@ -12,4 +12,4 @@ npm start
 ```
 
 ## Result
-![](https://github.com/csinrn/CCACS_Final/blob/master/readmeImages/node.png =360x210) ![](https://github.com/csinrn/CCACS_Final/blob/master/readmeImages/html.png =360x210) 
+![](https://github.com/csinrn/CCACS_Final/blob/master/readmeImages/node.png =60%x) ![](https://github.com/csinrn/CCACS_Final/blob/master/readmeImages/html.png =60%x) 
