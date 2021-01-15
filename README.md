@@ -12,4 +12,5 @@ npm start
 ```
 
 ## Result
-![](https://github.com/csinrn/CCACS_Final/blob/master/readmeImages/node.png =60%x) ![](https://github.com/csinrn/CCACS_Final/blob/master/readmeImages/html.png =60%x) 
+<img src="https://github.com/csinrn/CCACS_Final/blob/master/readmeImages/node.png" alt="Node"  width="250" height="140">
+<img src="https://github.com/csinrn/CCACS_Final/blob/master/readmeImages/html.png" alt="Html Result"  width="250" height="140">
