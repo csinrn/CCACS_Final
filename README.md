@@ -12,4 +12,4 @@ npm start
 ```
 
 ## Result
-![image](https://github.com/csinrn/CCACS_Final/blob/master/readmeImages/node.png) ![image](https://github.com/csinrn/CCACS_Final/blob/master/readmeImages/html.png) 
+![image](https://github.com/csinrn/CCACS_Final/blob/master/readmeImages/node.png =360x210) ![image](https://github.com/csinrn/CCACS_Final/blob/master/readmeImages/html.png =360x210) 
