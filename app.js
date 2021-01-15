@@ -44,10 +44,10 @@ app.get('/reg_thi_bug',  async (req, res, next) => {
             return [parseFloat(THI.toFixed(2)), parseInt(bugNum)]
         }
     });
-// (Lux * THI^4 + 10 ) / VOC^2 * e^(1/CO2)
+
     node_thi_pest = node_thi_pest.filter(Boolean) 
     const result = regression.linear(node_thi_pest);
-    console.log(result)
+    // console.log(result)
     r = {rawData: node_thi_pest, equation: result.equation, equation_string: result.string}
     res.send(r)
 });
@@ -76,6 +76,7 @@ app.get('/thi',  async (req, res, next) => {
 
 
 async function getRecords(){
+    /*
     // <-- web version -->
     var webhookURL = "https://5jstdu4jn7.execute-api.us-east-1.amazonaws.com/prod";
     res= await axios.get(
@@ -89,13 +90,13 @@ async function getRecords(){
         return records
     }).catch((error) => { console.error(error) }); 
     return res
-
-    /*
+    */
+    
     // <-- local version -->
-   csvstring = fs.readFileSync('data.csv', 'utf8');
+    csvstring = fs.readFileSync('data.csv', 'utf8');
     recs = parse(csvstring, {columns: true});
     return recs
-    */
+    
 }
 
 http.createServer(app).listen(port, function(){
