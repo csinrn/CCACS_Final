@@ -11,5 +11,5 @@ npm install
 npm start
 ```
 
-## Result
+## Results
 <img src="https://github.com/csinrn/CCACS_Final/blob/master/readmeImages/node.png" alt="Node"  width="250" height="200"> <img src="https://github.com/csinrn/CCACS_Final/blob/master/readmeImages/html.png" alt="Html Result"  width="390" height="200">
